@@ -25,7 +25,7 @@ export let isiTabel =
         </div>
     </th>
     <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-800 text-left">#KELAS#</th>
-    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-800 text-center">#PEMBAYARAN#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-800 text-left">#PEMBAYARAN#</th>
     <th class="whitespace-nowrap px-4 bg-white text-left">
         <div class="flex items-center -m-2">
             <div class="w-auto p-2">
@@ -34,7 +34,7 @@ export let isiTabel =
             </div>
         </div>
     </th>
-    <th class="whitespace-nowrap px-4 bg-white text-left">
+    <th class="whitespace-nowrap px-4 bg-white text-center">
         <div class="w-auto p-2">
         <p class="text-xs font-semibold text-coolGray-800">#ANGKA#</p>
         <p class="text-xs font-semibold text-coolGray-800">#HURUF#</p>
