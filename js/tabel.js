@@ -34,7 +34,7 @@ export let isiTabel =
             </div>
         </div>
     </th>
-    <th class="whitespace-nowrap px-4 bg-white text-center">
+    <th class="whitespace-nowrap px-4 bg-white text-left">
         <div class="w-auto p-2">
         <p class="text-xs font-semibold text-coolGray-800">#ANGKA#</p>
         <p class="text-xs font-semibold text-coolGray-800">#HURUF#</p>
