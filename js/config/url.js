@@ -1,0 +1,1 @@
+export let urlAPI = "https://dimasardnt6.herokuapp.com/all-kemahasiswaan";
