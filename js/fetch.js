@@ -14,6 +14,7 @@ function isiRow(value) {
             .replace("#NOHP#", value.identitas.no_hp)
             .replace("#NAMAPRODI#", value.identitas.prodi.nama)
             .replace("#JURUSAN#", value.identitas.jurusan)
+            .replace("#KELAS#", value.identitas.kelas)
             .replace("#PEMBAYARAN#", value.status_keuangan.total_pembayaran)
             .replace("#MATKUL#", value.nilai_mhs.matakuliah.nama_matkul)
             .replace("#DOSEN#", value.nilai_mhs.matakuliah.dosen)
