@@ -69,7 +69,7 @@ function isiRow4(value) {
             .replace("#JURUSAN#", value.bio_mahasiswa.jurusan)
             .replace("#KELAS#", value.bio_mahasiswa.kelas)
             .replace("#SPP#", value.total_pembayaran)
-        addInner("iniTabel4", content);
+        addInner("iniTabelKeuangan", content);
 }
 
 
