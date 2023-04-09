@@ -81,3 +81,98 @@ export let isiTabel2 =
     </td>
 </tr>
 `;
+
+export let isiTabel3 = 
+`
+<tr>
+    <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <div class="flex px-2 py-1">
+        <div>
+            <img src="../assets/img/user.png" class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-sm h-9 w-9 rounded-xl" alt="user1" />
+        </div>
+            <div class="flex flex-col justify-center">
+                <h6 class="mb-0 leading-normal text-sm">#NAMA#</h6>
+                <p class="mb-0 leading-tight text-xs text-slate-400">#NPM#</p>
+                <p class="mb-0 leading-tight text-xs text-slate-400">#NOHP#</p>
+            </div>
+        </div>
+    </td>
+    <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <p class="mb-0 font-semibold leading-tight text-xs">#NAMPRODI#</p>
+        <p class="mb-0 font-semibold leading-tight text-xs">#KODEPRODI#</p>
+    </td>
+    <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <p class="mb-0 font-semibold leading-tight text-xs">#JURUSAN#</p>
+    </td>
+    <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <p class="mb-0 font-semibold leading-tight text-xs">#KELAS#</p>
+    </td>
+    <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <p class="mb-0 font-semibold leading-tight text-xs">#SPP#</p>
+    </td>
+</tr>
+`;
+
+export let isiTabel4 = 
+`
+<tr>
+    <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <div class="flex px-2 py-1">
+        <div>
+            <img src="../assets/img/user.png" class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-sm h-9 w-9 rounded-xl" alt="user1" />
+        </div>
+            <div class="flex flex-col justify-center">
+                <h6 class="mb-0 leading-normal text-sm">#NAMA#</h6>
+                <p class="mb-0 leading-tight text-xs text-slate-400">#NPM#</p>
+                <p class="mb-0 leading-tight text-xs text-slate-400">#NOHP#</p>
+            </div>
+        </div>
+    </td>
+    <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <p class="mb-0 font-semibold leading-tight text-xs">#NAMAPRODI#</p>
+        <p class="mb-0 font-semibold leading-tight text-xs">#KODEPRODI#</p>
+    </td>
+    <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <p class="mb-0 font-semibold leading-tight text-xs">#JURUSAN#</p>
+    </td>
+    <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <p class="mb-0 font-semibold leading-tight text-xs">#KELAS#</p>
+    </td>
+</tr>
+`;
+
+export let isiTabel5 = 
+`
+<tr>
+    <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <div class="flex px-2 py-1">
+        <div>
+            <img src="../assets/img/user.png" class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-sm h-9 w-9 rounded-xl" alt="user1" />
+        </div>
+            <div class="flex flex-col justify-center">
+                <h6 class="mb-0 leading-normal text-sm">#NAMA#</h6>
+                <p class="mb-0 leading-tight text-xs text-slate-400">#NPM#</p>
+                <p class="mb-0 leading-tight text-xs text-slate-400">#NOHP#</p>
+            </div>
+        </div>
+    </td>
+    <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <p class="mb-0 font-semibold leading-tight text-xs">#NAMAPRODI#</p>
+        <p class="mb-0 font-semibold leading-tight text-xs">#KODEPRODI#</p>
+    </td>
+    <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <p class="mb-0 font-semibold leading-tight text-xs">#JURUSAN#</p>
+    </td>
+    <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <p class="mb-0 font-semibold leading-tight text-xs">#KELAS#</p>
+    </td>
+    <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <p class="mb-0 font-semibold leading-tight text-xs">#MATKUL#</p>
+        <p class="mb-0 font-semibold leading-tight text-xs">#DOSEN#</p>
+    </td>
+    <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+        <p class="mb-0 font-semibold leading-tight text-xs">#ANGKA#</p>
+        <p class="mb-0 font-semibold leading-tight text-xs">#HURUF#</p>
+    </td>
+</tr>
+`;
