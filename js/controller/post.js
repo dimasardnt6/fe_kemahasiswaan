@@ -4,8 +4,7 @@ import { urlPOST, AmbilResponse} from "../config/url_post.js";
 
 
 function pushData(){
-    var hari_kerja = getValue("hari_kerja");
-
+    
     let data = {
         identitas: {
             npm: getValue("npm"),
