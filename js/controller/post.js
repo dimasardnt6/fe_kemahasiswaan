@@ -12,10 +12,10 @@ function pushData(){
             no_hp: getValue("no_hp"),
             prodi: {
                 kode_prodi: getValue("kode_prodi"),
-                nama: getValue("nama_prodi"),
+                nama: getValue("nama_prodi")
             },
             jurusan: getValue("jurusan"),
-            kelas: getValue("kelas"),
+            kelas: getValue("kelas")
         },
         status_keuangan: {
             total_pembayaran: parseInt(getValue("total_pembayaran")),
@@ -26,7 +26,7 @@ function pushData(){
                 dosen: getValue("dosen"), 
             },
             nilai_angka: parseInt(getValue("nilai_angka")),
-            nilai_huruf: getValue("nilai_huruf"),
+            nilai_huruf: getValue("nilai_huruf")
         }
     }
     postData(urlPOST, data, AmbilResponse);
