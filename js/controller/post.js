@@ -4,7 +4,7 @@ import { urlPOST, AmbilResponse} from "../config/url_post.js";
 
 
 function pushData(){
-    
+
     let data = {
         identitas: {
             npm: getValue("npm"),
@@ -33,4 +33,4 @@ function pushData(){
 
 }
 
-onClick("button", pushData);
+onClick("save", pushData);
