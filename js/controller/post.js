@@ -33,4 +33,4 @@ function pushData(){
 
 }
 
-onClick("save", pushData);
+onClick("button", pushData);
