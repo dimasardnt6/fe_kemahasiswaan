@@ -6,5 +6,5 @@ export let urlPUT = "https://dimasardnt6-ulbi.herokuapp.com/upd-kemahasiswaan/" 
 export function AmbilResponse(result) {
     console.log(result);
     alert(result.message);
-    window.location.href = "index.html"
+    window.location.href = "tabel-kemahasiswaan.html"
 }
