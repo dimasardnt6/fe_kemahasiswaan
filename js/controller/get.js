@@ -38,6 +38,8 @@ function isiRow2(value) {
             .replace("#ANGKA#", value.nilai_mhs.nilai_angka)
             .replace("#HURUF#", value.nilai_mhs.nilai_huruf)
             .replace("#KELAS#", value.identitas.kelas)
+            .replace("#IDEDIT#", value._id)
+            .replace("#IDHAPUS#", value._id)
         addInner("iniTabel2", content);
 }
 

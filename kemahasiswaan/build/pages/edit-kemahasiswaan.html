@@ -31,7 +31,7 @@
     <!-- Main Styling -->
     <link href="../assets/css/soft-ui-dashboard-tailwind.css?v=1.0.4" rel="stylesheet" />
     <script src="../../../js/main.js"></script>
-    <script type="module" src="../../../js/fetch.js"></script>
+    <script type="module" src="../../../js/controller/post.js"></script>
 
   </head>
 
@@ -332,9 +332,9 @@
               <li class="leading-normal text-sm">
                 <a class="opacity-50 text-slate-700" href="javascript:;">Pages</a>
               </li>
-              <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']" aria-current="page">Tabel Kemahasiswaan</li>
+              <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']" aria-current="page">Tambah Data Kemahasiswaan</li>
             </ol>
-            <h6 class="mb-0 font-bold capitalize">Tabel Kemahasiswaan</h6>
+            <h6 class="mb-0 font-bold capitalize">Tambah Data Kemahasiswaan</h6>
           </nav>
 
           <div class="flex items-center mt-2 grow sm:mt-0 sm:mr-6 md:mr-0 lg:flex lg:basis-auto">
@@ -459,25 +459,70 @@
           <div class="flex-none w-full max-w-full px-3">
             <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
               <div class="p-6 pb-0 mb-0 bg-white border-b-0 border-b-solid rounded-t-2xl border-b-transparent">
-                <h6>Data Kemahasiswaan</h6>
-                <a class="inline-block px-3 py-2 font-bold text-center text-white uppercase align-middle transition-all bg-transparent rounded-lg cursor-pointer leading-pro text-xs ease-soft-in shadow-soft-md bg-150 bg-gradient-to-tl from-gray-900 to-slate-800 hover:shadow-soft-xs active:opacity-85 hover:scale-102 tracking-tight-soft bg-x-25" href="tambah_kemahasiswaan.html"> <i class="fas fa-plus"> </i>&nbsp;&nbsp;Tambah Data</a>
+                <h5>Tambah Data Kemahasiswaan</h5>
               </div>
-              <div class="flex-auto px-0 pt-0 pb-2">
-                <div class="p-0 overflow-x-auto">
-                  <table class="items-center w-full mb-0 align-top border-gray-200 text-slate-500" id="iniTabel2">
-                    <thead class="align-bottom">
-                      <tr>
-                        <th class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-xxs border-b-solid tracking-none whitespace-nowrap">Identitas Mahasiswa</th>
-                        <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-xxs border-b-solid tracking-none whitespace-nowrap">Prodi & Jurusan</th>
-                        <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-xxs border-b-solid tracking-none whitespace-nowrap">Kelas</th>
-                        <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-xxs border-b-solid tracking-none whitespace-nowrap">Total Pembayaran SPP</th>
-                        <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-xxs border-b-solid tracking-none whitespace-nowrap">Matakuliah</th>
-                        <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-xxs border-b-solid tracking-none whitespace-nowrap">Nilai & Grade</th>
-                        <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-xxs border-b-solid tracking-none whitespace-nowrap">Aksi</th>
-                      </tr>
-                    </thead>
-                  </table>
-                </div>
+                <div class="flex-auto p-6">
+                    <form role="form">
+                    <h6 class="text-center uppercase py-3 border-b">Identitas Mahasiswa</h6>
+                      <label class="mb-2 ml-1 font-bold text-xs text-slate-700">NPM</label>
+                      <div class="mb-4">
+                        <input id="npm" type="text" class="focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Npm" aria-label="Npm" aria-describedby="npm-addon" />
+                      </div>
+                      <label class="mb-2 ml-1 font-bold text-xs text-slate-700">Nama</label>
+                      <div class="mb-4">
+                        <input id="nama" type="text" class="focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Nama" aria-label="Nama" aria-describedby="nama-addon" />
+                      </div>
+                      <label class="mb-2 ml-1 font-bold text-xs text-slate-700">Nomor Handphone</label>
+                      <div class="mb-4">
+                        <input id="no_hp" type="text" class="focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Nomor Handphone" aria-label="Nomor Handphone" aria-describedby="nohp-addon" />
+                      </div>
+                      <label class="mb-2 ml-1 font-bold text-xs text-slate-700">Kode Prodi</label>
+                      <div class="mb-4">
+                        <input id="kode_prodi" type="text" class="focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Kode Prodi" aria-label="Kode Prodi" aria-describedby="kode_prodi-addon" />
+                      </div>
+                      <label class="mb-2 ml-1 font-bold text-xs text-slate-700">Nama Prodi</label>
+                      <div class="mb-4">
+                        <input id="nama_prodi" type="text" class="focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Nama Prodi" aria-label="Nama Prodi" aria-describedby="nama_prodi-addon" />
+                      </div>
+                      <label class="mb-2 ml-1 font-bold text-xs text-slate-700">Jurusan</label>
+                      <div class="mb-4">
+                        <input id="jurusan" type="text" class="focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Jurusan" aria-label="Jurusan" aria-describedby="jurusan-addon" />
+                      </div>
+                      <label class="mb-2 ml-1 font-bold text-xs text-slate-700">Kelas</label>
+                      <div class="mb-4">
+                        <input id="kelas" type="text" class="focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Kelas" aria-label="Kelas" aria-describedby="kelas-addon" />
+                      </div>
+                      <h6 class="text-center uppercase py-3 border-b">Status Keuangan</h6>
+                      <label class="mb-2 ml-1 font-bold text-xs text-slate-700">Total Pembayaran SPP</label>
+                      <div class="mb-4">
+                        <input id="total_pembayaran" type="text" class="focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Total Pembayaran SPP" aria-label="SPP" aria-describedby="total-pembayaran-addon" />
+                      </div>
+                      <h6 class="text-center uppercase py-3 border-b">Nilai Mahasiswa</h6>
+                      <label class="mb-2 ml-1 font-bold text-xs text-slate-700">Nama Matakuliah</label>
+                      <div class="mb-4">
+                        <input id="nama_matkul" type="text" class="focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Nama Matakuliah" aria-label="Nama_matkul" aria-describedby="nam_matkul-addon" />
+                      </div>
+                      <label class="mb-2 ml-1 font-bold text-xs text-slate-700">Nama Dosen</label>
+                      <div class="mb-4">
+                        <input id="dosen" type="text" class="focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Nama Dosen" aria-label="Nama Dosen" aria-describedby="dosen-addon" />
+                      </div>
+                      <label class="mb-2 ml-1 font-bold text-xs text-slate-700">Nilai</label>
+                      <div class="mb-4">
+                        <input id="nilai_angka" type="text" class="focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Nilai" aria-label="Nilai" aria-describedby="nilai_angka-addon" />
+                      </div>
+                      <label class="mb-2 ml-1 font-bold text-xs text-slate-700">Grade</label>
+                        <select id="nilai_huruf"
+                        class="focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow">
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                        </select>
+                      <div class="text-center">
+                        <button id="button" class="inline-block px-6 py-3 mt-6 mb-0 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer shadow-soft-md bg-x-25 bg-150 leading-pro text-xs ease-soft-in tracking-tight-soft bg-gradient-to-tl from-purple-700 to-pink-500 hover:scale-102 hover:shadow-soft-xs active:opacity-85">Save</button>
+                        <button class="inline-block px-6 py-3 mt-6 font-bold text-center uppercase align-middle transition-all bg-transparent border rounded-lg cursor-pointer border-fuchsia-500 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 hover:scale-102 active:opacity-85 hover:shadow-soft-xs text-fuchsia-500">Cancel</button>
+                      </div>
+                    </form>
+                  </div>
               </div>
             </div>
           </div>
@@ -581,6 +626,7 @@
         </div>
       </div>
     </div>
+
   </body>
   <!-- plugin for scrollbar  -->
   <script src="../assets/js/plugins/perfect-scrollbar.min.js" async></script>
