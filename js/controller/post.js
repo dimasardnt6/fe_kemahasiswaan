@@ -10,10 +10,10 @@ function pushData(){
             npm: getValue("npm"),
             nama: getValue("nama"),
             no_hp: getValue("no_hp"),
-            prodi: [{
+            prodi: {
                 kode_prodi: getValue("kode_prodi"),
                 nama: getValue("nama_prodi")
-            }],
+            },
             jurusan: getValue("jurusan"),
             kelas: getValue("kelas")
         },
@@ -21,10 +21,10 @@ function pushData(){
             total_pembayaran: parseInt(getValue("total_pembayaran"))
         },
         nilai_mhs: {
-            matakuliah: [{
+            matakuliah: {
                 nama_matkul: getValue("nama_matkul"),
                 dosen: getValue("dosen")
-            }],
+            },
             nilai_angka: parseInt(getValue("nilai_angka")),
             nilai_huruf: getValue("nilai_huruf")
         }
