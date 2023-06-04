@@ -22,7 +22,7 @@ function pushData(){
         },
         nilai_mhs: {
             matakuliah: {
-                nama_matkul: getValue("nama_matkuk"),
+                nama_matkul: getValue("nama_matkul"),
                 dosen: getValue("dosen"), 
             },
             nilai_angka: parseInt(getValue("nilai_angka")),
