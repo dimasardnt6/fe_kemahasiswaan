@@ -26,7 +26,7 @@ function pushData(){
                 dosen: getValue("dosen"), 
             },
             nilai_angka: parseInt(getValue("nilai_angka")),
-            nilai_huruf: getValue("nilai_huruf")
+            nilai_huruf: getValue("nilai_huruf"),
         }
     }
     postData(urlPOST, data, AmbilResponse);
