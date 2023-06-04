@@ -1,6 +1,6 @@
-import { postData } from "https://bukulapak.github.io/api/process.js";
+import { putData } from "https://bukulapak.github.io/api/process.js";
 import { onClick, getValue } from "https://bukulapak.github.io/element/process.js";
-import { urlPOST, AmbilResponse} from "../config/url_put.js";
+import { urlPUT, AmbilResponse} from "../config/url_put.js";
 
 
 function pushData(){
@@ -29,7 +29,7 @@ function pushData(){
             nilai_huruf: getValue("nilai_huruf"),
         }
     }
-    postData(urlPOST, data, AmbilResponse);
+    putData(urlPUT, data, AmbilResponse);
 
 }
 
