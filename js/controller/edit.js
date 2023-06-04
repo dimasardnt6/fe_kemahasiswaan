@@ -11,7 +11,7 @@ export function isiData(results) {
       { id: 'nama_matkul', path: 'nilai_mhs.matakuliah.nama_matkul' },
       { id: 'dosen', path: 'nilai_mhs.matakuliah.dosen' },
       { id: 'nilai_angka', path: 'nilai_mhs.nilai_angka' },
-      { id: 'nilai_huruf', path: 'nilai_mhs.nilai_angka' },
+      { id: 'nilai_huruf', path: 'nilai_mhs.nilai_huruf' },
     ];
   
     inputMapping.forEach(({ id, path, index, property }) => {
