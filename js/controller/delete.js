@@ -1,7 +1,6 @@
 function deleteData(IDHAPUS) {
     var kemahasiswaanId = IDHAPUS;
-    console.log(IDHAPUS)
-    var target_url = "https://dimasardnt6-ulbi.herokuapp.com/delete-kemahasiswaan/" + kemahasiswaanId;
+    var target_url = "https://dimasardnt6-ulbi.herokuapp.com/delete-kemahasiswaan" + kemahasiswaanId;
 
     var requestOptions = {
         method: 'DELETE',
