@@ -4,32 +4,27 @@ import { urlPOST, AmbilResponse} from "../config/url_post.js";
 
 
 function pushData(){
+    var hari_kerja = getValue("hari_kerja");
 
     let data = {
-        identitas: {
-            npm: getValue("npm"),
-            nama: getValue("nama"),
-            no_hp: getValue("no_hp"),
-            prodi: {
-                kode_prodi: getValue("kode_prodi"),
-                nama: getValue("nama_prodi")
-            },
-            jurusan: getValue("jurusan"),
-            kelas: getValue("kelas")
-        },
-        status_keuangan: {
-            total_pembayaran: parseInt(getValue("total_pembayaran"))
-        },
-        nilai_mhs: {
-            matakuliah: {
-                nama_matkul: getValue("nama_matkul"),
-                dosen: getValue("dosen")
-            },
-            nilai_angka: parseInt(getValue("nilai_angka")),
-            nilai_huruf: getValue("nilai_huruf")
+        longitude : parseFloat(getValue("longitude")),
+        latitude : parseFloat(getValue("latitude")),
+        location : getValue("location"),
+        phone_number : getValue("phone_number"),
+        checkin : getValue("checkin"),
+        biodata : {
+            nama : getValue("nama"),
+            jabatan : getValue("jabatan"),
+            jam_kerja : [{
+                durasi : parseInt(getValue("durasi")),
+                jam_masuk : getValue("jam_masuk"),
+                jam_keluar : getValue("jam_keluar"),
+            }],
+            hari_kerja : hari_kerja.split(",")
         }
     }
     postData(urlPOST, data, AmbilResponse);
+
 }
 
 onClick("button", pushData);
